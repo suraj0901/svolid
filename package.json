@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "acorn": "^8.8.2",
+    "escodegen": "^2.0.0",
+    "estree-walker": "^3.0.3"
   }
 }
