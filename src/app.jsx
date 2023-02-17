@@ -1,11 +1,11 @@
 const app = () => {
-  let counter = 0;
-  const increment = () => counter++;
-  const decrement = () => counter--;
+  const [counter, setCounter] = useState(0);
+  const increment = () => setCounter((prev) => prev++);
+  const decrement = () => setCounter((prev) => prev--);
   return (
     <div>
       <button on:click={increment}>increment</button>
-      <p>Count is {counter}</p>
+      <p>Count is {counter()}</p>
       <button on:click={decrement}>decrement</button>
     </div>
   );
