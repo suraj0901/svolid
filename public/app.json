@@ -1,9 +1,7 @@
 [
   {
     "html": {
-      "type": "Element",
-      "name": "div",
-      "attributes": [],
+      "type": "Fragment",
       "children": [
         {
           "type": "Element",
