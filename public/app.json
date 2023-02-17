@@ -28,13 +28,20 @@
           "name": "img",
           "attributes": [
             {
-              "type": "Expression",
-              "value": "src"
+              "type": "Attribute",
+              "name": "src",
+              "value": {
+                "type": "Expression",
+                "value": "src"
+              }
             },
             {
               "type": "Attribute",
               "name": "alt",
-              "value": "random image"
+              "value": {
+                "type": "Text",
+                "value": "random image"
+              }
             }
           ],
           "selfClosing": true
