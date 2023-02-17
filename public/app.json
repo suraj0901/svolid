@@ -26,6 +26,22 @@
       },
       {
         "type": "Element",
+        "name": "img",
+        "attributes": [
+          {
+            "type": "Expression",
+            "value": "src"
+          },
+          {
+            "type": "Attribute",
+            "name": "alt",
+            "value": "random image"
+          }
+        ],
+        "selfClosing": true
+      },
+      {
+        "type": "Element",
         "name": "p",
         "attributes": [],
         "children": [
