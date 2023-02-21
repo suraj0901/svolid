@@ -8,17 +8,15 @@ const app = () => {
   const src = './image';
   return (() => {
     let _el$ = _temp$.cloneNode(true);
-    _el$.firstChild.$$click = increment;
-    _runtime$.bind(() => _el$.firstChild.nextSibling.setAttribute('src', src));
-    _el$.firstChild.nextSibling.nextSibling.nextSibling.nextSibling.$$click =
-      decrement;
+    _el$[0].$$click = increment;
+    _runtime$.bind(() => _el$[1].setAttribute('src', src));
+    _el$[4].$$click = decrement;
     _runtime$.replace([
-      _el$.firstChild.nextSibling.nextSibling.firstChild.nextSibling,
+      _el$[2][1],
       () => counter(),
-      _el$.firstChild.nextSibling.nextSibling.nextSibling.firstChild,
+      _el$[3][0],
       () => counter(),
-      _el$.firstChild.nextSibling.nextSibling.nextSibling.firstChild.nextSibling
-        .nextSibling,
+      _el$[3][2],
       () => counter() * 2,
     ]);
     return _el$;
