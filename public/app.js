@@ -1,4 +1,4 @@
-export const _temp$ = _runtime$.template(
+export const _temp$ = window._runtime$.template(
   '<button >increment</button> <img  alt="random image"/> <p >Count is <!></p> <p ><!> * 2 = <!></p> <button >decrement</button>'
 );
 const app = () => {
@@ -9,9 +9,9 @@ const app = () => {
   return (() => {
     let _el$ = _temp$.cloneNode(true);
     _el$[0].$$click = increment;
-    _runtime$.bind(() => _el$[1].setAttribute('src', src));
+    window._runtime$.bind(() => _el$[1].setAttribute('src', src));
     _el$[4].$$click = decrement;
-    _runtime$.replace([
+    window._runtime$.replace([
       _el$[2][1],
       () => counter(),
       _el$[3][0],
