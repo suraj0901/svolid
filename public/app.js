@@ -1,5 +1,5 @@
 export const _temp$ = window._runtime$.template(
-  '<button >increment</button> <img  alt="random image"/> <p >Count is <!></p> <p ><!> * 2 = <!></p> <button >decrement</button>'
+  '<div ><button >increment</button> <img  alt="random image"/> <p >Count is <!></p> <p ><!> * 2 = <!></p> <button >decrement</button></div>'
 );
 const app = () => {
   const [counter, setCounter] = useState(0);

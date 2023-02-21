@@ -4,13 +4,13 @@ const app = () => {
   const decrement = () => setCounter((prev) => prev--);
   const src = "./image"
   return (
-    <>
+    <div>
       <button on:click={increment}>increment</button>
       <img {src} alt="random image"/>
       <p>Count is {counter()}</p>
       <p>{counter()} * 2 = {counter()*2}</p>
       <button on:click={decrement}>decrement</button>
-    </>
+    </div>
   );
 };
 
