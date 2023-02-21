@@ -14,21 +14,17 @@ const app = () => {
       _runtime$.bind(() =>
         _el$.firstChild.nextSibling.setAttribute('src', src)
       );
-      _runtime$.replace(
-        _el$.firstChild.nextSibling.nextSibling.firstChild.nextSibling,
-        () => counter()
-      );
-      _runtime$.replace(
-        _el$.firstChild.nextSibling.nextSibling.nextSibling.firstChild,
-        () => counter()
-      );
-      _runtime$.replace(
-        _el$.firstChild.nextSibling.nextSibling.nextSibling.firstChild
-          .nextSibling.nextSibling,
-        () => counter() * 2
-      );
       _el$.firstChild.nextSibling.nextSibling.nextSibling.nextSibling.$$click =
         decrement;
+      _runtime$.replace([
+        _el$.firstChild.nextSibling.nextSibling.firstChild.nextSibling,
+        () => counter(),
+        _el$.firstChild.nextSibling.nextSibling.nextSibling.firstChild,
+        () => counter(),
+        _el$.firstChild.nextSibling.nextSibling.nextSibling.firstChild
+          .nextSibling.nextSibling,
+        () => counter() * 2,
+      ]);
       return _el$;
     };
   })();
