@@ -1,3 +1,4 @@
+import { useState } from "../lib/Store";
 const app = () => {
   const [counter, setCounter] = useState(0);
   const increment = () => setCounter((prev) => prev++);
