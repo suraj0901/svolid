@@ -4,7 +4,7 @@ const app = () => {
   const decrement = () => setCounter((prev) => prev--);
   const src = "./image"
   return (
-     ` <div ><button >increment</button>s<img src=${src} alt="random image"/>s<p >Count iss<span>${counter()}</span></p>s<p ><span>${counter()}</span>s* 2 =s<span>${counter()*2}</span></p>s<button >decrement</button></div> `
+     ` <div ><button >increment</button> <img src=${src} alt="random image"/> <p >Count is <span>${counter()}</span></p> <p ><span>${counter()}</span> * 2 = <span>${counter()*2}</span></p> <button >decrement</button></div> `
   );
 };
 
