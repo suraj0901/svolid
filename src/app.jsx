@@ -6,7 +6,7 @@ const app = () => {
   const src = "./image"
   return (
     <div>
-      <button on:click={increment}>increment</button>
+      <button h="helo" on:click={increment}>increment</button>
       <img {src} alt="random image"/>
       <p>Count is {counter()}</p>
       <p>{counter()} * 2 = {counter()*2}</p>
