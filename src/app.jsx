@@ -1,8 +1,8 @@
 import { useState } from "../lib/Store";
 const app = () => {
   const [counter, setCounter] = useState(0);
-  const increment = () => setCounter((prev) => prev++);
-  const decrement = () => setCounter((prev) => prev--);
+  const increment = () => setCounter((prev) => ++prev);
+  const decrement = () => setCounter((prev) => --prev);
   const src = "./image"
   return (
     <div>
